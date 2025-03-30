@@ -7,7 +7,7 @@ app = Flask(__name__)
 def index():
     random_message = "Hoj"
     current_year = datetime.datetime.now().year
-    cities = ["Ljubljana", "Bohinj", "Srednja vas 26"]
+    cities = ["Ljubljana", "Bohinj", "Srednja vas"]
 
 
     return render_template("index.html", message = random_message,year = current_year, cities = cities)
